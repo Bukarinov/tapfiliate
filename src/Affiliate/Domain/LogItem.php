@@ -2,7 +2,7 @@
 
 namespace Affiliate\Domain;
 
-class Item
+class LogItem
 {
     public function __construct(
         private string $clientId,

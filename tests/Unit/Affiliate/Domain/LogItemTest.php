@@ -2,15 +2,15 @@
 
 namespace Unit\Affiliate\Domain;
 
-use Affiliate\Domain\Item;
+use Affiliate\Domain\LogItem;
 use PHPUnit\Framework\TestCase;
 
-class ItemTest extends TestCase
+class LogItemTest extends TestCase
 {
     public function test_GivenAllFields_ObjectIsCreatedSuccessfully()
     {
         $dateTime = new \DateTime('2018-04-04T08:45:14.384000Z');
-        $item = new Item(
+        $item = new LogItem(
             clientId: 'user15',
             userAgent: 'Firefox 59',
             location: 'https://shop.com/products/?id=2',
@@ -19,7 +19,7 @@ class ItemTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            Item::class,
+            LogItem::class,
             $item
         );
 
