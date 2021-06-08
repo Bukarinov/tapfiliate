@@ -36,4 +36,9 @@ class LogItem
     {
         return $this->dateTime;
     }
+
+    public function getBrowserId(): string
+    {
+        return $this->clientId . '_' . $this->userAgent;
+    }
 }
