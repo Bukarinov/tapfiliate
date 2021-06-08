@@ -70,3 +70,14 @@ Execute PHPUnit tests:
 ```bash
 ./bin/run-tests
 ```
+
+## Solution
+
+The main algorithm for getting a list of success links can be found in `Cashback->getSuccessLinks()` method.
+The idea behind the algorithm is simple:
+ - Sort log items by their date.
+ - Find a purchase item in the log and remember it in a temp stack.
+ - If we have an item in the temp stack and see the first referral link then we find the last referral link.
+ - Remember this link into the result list.
+
+Test cases for the solution located in `CashbackTest` class.
