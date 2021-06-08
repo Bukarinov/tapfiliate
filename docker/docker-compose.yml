@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  php-cli:
+    container_name: php-cli
+    build:
+      context: php-cli
+    volumes:
+      - ./../:/var/www
