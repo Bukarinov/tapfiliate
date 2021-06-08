@@ -49,3 +49,24 @@ Shop pays cashback services for customers who click on their link, paid for the 
 The Ours service wants to find customers who made the purchase thanks to it by their logs. You need to write a program that looks for winning partner links to the Ours service. Consider different scenarios of client behavior on the site.
 
 In the result, the manager expects to receive a list of customers and what partner links led to their purchases.
+
+## Dev Environment Setup
+
+### Needed tools
+1. [Install Docker](https://www.docker.com/get-started)
+2. Clone the project: `git clone https://github.com/Bukarinov/tapfiliate tapfiliate`
+3. Move to the project directory: `cd gelato_coding_exercise_checkout`
+
+### Application execution
+
+Install all the dependencies and bring up the project with Docker executing:
+```bash
+./bin/run-dev
+```
+
+### Tests execution
+
+Execute PHPUnit tests:
+```bash
+./bin/run-tests
+```

@@ -1,0 +1,29 @@
+{
+  "name": "bukarinov/tapfiliate",
+  "description": "An implementation for a Tapfiliate coding exercise.",
+  "type": "project",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Nikolay Bukarinov",
+      "email": "bukarinov@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0.7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\Unit\\": "tests/Unit/"
+    }
+  }
+}
